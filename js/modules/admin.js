@@ -100,7 +100,7 @@ async function loadProducts() {
         tbody.innerHTML = data.products.map(p => `
             <tr>
                 <td>${p.id}</td>
-                <td>${p.image ? `<img class="admin-thumb" src="${esc(p.image)}" alt="">` : `<div class="admin-thumb">нет</div>`}</td>
+                <td>${p.image ? `<div class="admin-thumb"><img src="${esc(p.image)}" alt=""></div>` : `<div class="admin-thumb">нет</div>`}</td>
                 <td><strong>${esc(p.title)}</strong></td>
                 <td>${esc(p.category)}</td>
                 <td>${esc(p.subcategory || '—')}</td>

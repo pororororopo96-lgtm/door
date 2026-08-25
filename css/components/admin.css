@@ -59,7 +59,8 @@
 .admin-table th, .admin-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #eef2f1; font-size: 14px; }
 .admin-table th { background: #f0f5f3; color: #34433d; font-weight: 600; }
 .admin-table tr:hover td { background: #fafcfb; }
-.admin-thumb { width: 46px; height: 46px; object-fit: cover; border-radius: 6px; background: #e9eeec; display: flex; align-items: center; justify-content: center; font-size: 11px; }
+.admin-thumb { width: 46px; height: 46px; border-radius: 6px; background: #e9eeec; display: flex; align-items: center; justify-content: center; font-size: 11px; overflow: hidden; }
+.admin-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .admin-actions button { margin-right: 6px; border: none; border-radius: 7px; padding: 7px 12px; cursor: pointer; font-size: 13px; font-weight: 600; }
 .btn-edit { background: #1a7a55; color: #fff; }
 .btn-delete { background: #ef5350; color: #fff; }
