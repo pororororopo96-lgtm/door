@@ -16,7 +16,7 @@
 }
 
 .category-card {
-    background: var(--color-gray-100);
+    background: #fff;
     border-radius: var(--border-radius-md);
     overflow: hidden;
     cursor: pointer;
@@ -31,11 +31,28 @@
 }
 
 .category-image {
-    height: 260px;
-    background: linear-gradient(135deg, #e0dbd2 0%, #ccc6bc 100%);
+    position: relative;
+    height: 250px;
+    padding: 14px 18px;
+    box-sizing: border-box;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    transition: transform .35s ease;
+}
+
+.category-card:hover .category-image img {
+    transform: scale(1.025);
 }
 
 .img-note {
@@ -47,14 +64,14 @@
 }
 
 .category-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin: 24px 0 12px;
-    text-align: center;
+    margin: 0 0 8px;
+    text-align: left;
 }
 
 .category-card p {
-    text-align: center;
+    text-align: left;
     color: var(--color-text-light);
-    padding-bottom: 24px;
+    padding-bottom: 4px;
 }

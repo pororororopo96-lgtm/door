@@ -6,7 +6,7 @@ export function initSlider() {
     const track = document.getElementById('sliderTrack');
     if (!track) return;
 
-    const featured = products.filter(p => p.category === 'Межкомнатные двери').slice(0, 8);
+    const featured = products.filter(p => p.category === 'Межкомнатные двери').slice(0, 4);
     track.innerHTML = featured.map(p => `
         <article class="product-card" data-id="${p.id}">
             <div class="product-image">
